@@ -67,7 +67,7 @@ export default {
 
     googleFonts: {
         families: {
-            'Alex+Brush': true,
+            'Water+Brush': true,
             Montserrat: [400, 700, 900],
         },
     },
