@@ -1,134 +1,179 @@
 <template>
 	<div>
+		<!-- START HEADER -->
 		<div class="bg-primary">
-			<div class="grid grid-cols-12 gap-4">
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-6 md:order-2">
+					<div class="relative">
+						<div class="title-content-text">
+							<div class="content-middle text-white text-center">
+								<h1 class="text-7xl mb-2 px-2">
+									{{ groomName }} + {{ brideName }}
+								</h1>
+								<h2 class="text-xl font-bold uppercase body-font">
+									{{ hashtag }}
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="col-span-12 md:col-span-6">
 					<div class="relative">
-						<div class="index-h1-background">
+						<div class="half-content-image-header">
 						</div>
 					</div>
 				</div>
-				<div class="col-span-12 md:col-span-6 relative">
-					<div class="content-middle-medium text-white text-center py-20">
-						<h1 class="text-7xl mb-2 px-2">
-							{{ groomName }} + {{ brideName }}
-						</h1>
-						<h2 class="text-xl font-bold uppercase body-font">
-							{{ hashtag }}
-						</h2>
+			</div>
+		</div>
+		<!-- END HEADER -->
+
+		<!-- START SECTION 1 - COUNTDOWN -->
+		<div class="bg-secondary text-black">
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-6">
+					<div class="relative">
+						<div class="half-content-text">
+							<div class="content-middle-medium text-center py-10">
+									<h2 class="body-font text-xl font-bold pb-1">Save The Date</h2>
+									<h1 class="body-font text-3xl uppercase">{{ weddingDate }}</h1>
+									<CountdownToDate/>
+								<div class="text-center mb-5">
+									<a
+										:href="rsvpLink"
+										target="_blank"
+										class="bg-accent text-white uppercase rounded-md font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
+									>
+										RSVP!
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-6">
+					<div class="relative">
+						<div class="half-content-image-1">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- END SECTION 1 -->
 
 
-		<div class="bg-secondary py-10">
-			<div class="text-center mx-auto md:max-w-2xl">
-				<h2 class="body-font text-xl font-bold pb-1">Save The Date</h2>
-				<h1 class="body-font text-3xl uppercase">{{ weddingDate }}</h1>
-				<CountdownToDate/>
-			</div>
-			<div class="text-center mb-10">
-				<a
-					:href="rsvpLink"
-					target="_blank"
-					class="bg-accent text-white uppercase rounded-md font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
-				>
-					RSVP!
-				</a>
-			</div>
-		</div>
-
+		<!-- START SECTION 2 - GROOM -->
 		<div class="bg-primary">
-			<div class="text-center mx-auto max-w-2xl md:max-w-5xl">
-				<div class="grid grid-cols-12 gap-4 pt-10 pb-12">
-					<div class="col-span-12 md:col-span-6 px-5">
-						<div
-							class="text-center mx-auto max-w-sm md:max-w-xs px-5"
-						>
-							<img
-								class="rounded-xl shadow-lg"
-								:src="groomImage"
-								alt="Groom Headshot"
-							/>
-						</div>
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-6 md:order-2">
+					<div class="relative">
+						<div class="headshot-content-text">
+							<div class="content-middle-medium text-center py-10 md:px-10">
+								<div class="mb-10">
+									<h2 class="pt-7 text-5xl text-white">
+										About {{ groomName }}
+									</h2>
+									<p class="text-white text-left">
+										{{ groomBio.substring(0, 130) + '...' }}
+									</p>
+								</div>
 
-						<div class="mb-10">
-							<h2 class="pt-7 text-5xl text-white">
-								About {{ groomName }}
-							</h2>
-							<p class="text-white text-left">
-								{{ groomBio.substring(0, 100) + '...' }}
-							</p>
-						</div>
-
-						<div class="text-center mb-10">
-							<NuxtLink
-								to="/groom"
-								class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
-							>
-								Read More
-							</NuxtLink>
+								<div class="text-center mb-10">
+									<NuxtLink
+										to="/groom"
+										class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+									>
+										Read More
+									</NuxtLink>
+								</div>
+							</div>
 						</div>
 					</div>
-
-					<div class="col-span-12 md:col-span-6 px-5">
-						<div
-							class="text-center mx-auto max-w-sm md:max-w-xs px-5"
-						>
-							<img
-								class="rounded-xl shadow-lg"
-								:src="brideImage"
-								alt="Bride Headshot"
-							/>
-						</div>
-
-						<div class="mb-10">
-							<h2 class="pt-7 text-5xl text-white">
-								About {{ brideName }}
-							</h2>
-							<p class="text-white text-left">
-								{{ brideBio.substring(0, 100) + '...' }}
-							</p>
-						</div>
-
-						<div class="text-center mb-10">
-							<NuxtLink
-								to="/bride"
-								class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
-							>
-								Read More
-							</NuxtLink>
+				</div>
+				<div class="col-span-12 md:col-span-6">
+					<div class="relative">
+						<div class="half-content-image-2">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- END SECTION 2 -->
 
-		<div class="bg-secondary">
-			<div class="text-center mx-auto max-w-2xl md:max-w-5xl">
-				<div class="grid grid-cols-12 gap-4 pt-10 pb-12">
-					<div class="col-span-12 px-5">
-						<div class="mb-10">
-							<h2 class="pt-7 text-5xl text-black">
-								Meet {{ groomName }} & {{ brideName }}
-							</h2>
-							<p class="text-black text-left">
-								{{ coupleBio.substring(0, 200) + '...' }}
-							</p>
+		<!-- START SECTION 3 - BRIDE -->
+		<div class="bg-secondary text-black">
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-6">
+					<div class="relative">
+						<div class="headshot-content-text">
+							<div class="content-middle-medium text-center py-10 md:px-10">
+								<div class="mb-10">
+									<h2 class="pt-7 text-5xl">
+										About {{ brideName }}
+									</h2>
+									<p class=" text-left">
+										{{ brideBio.substring(0, 130) + '...' }}
+									</p>
+								</div>
+
+								<div class="text-center mb-10">
+									<NuxtLink
+										to="/bride"
+										class="text-black uppercase rounded-md font-bold border-black border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+									>
+										Read More
+									</NuxtLink>
+								</div>
+							</div>
 						</div>
-						<div class="text-center mb-10">
-							<NuxtLink
-								to="/the-couple"
-								class="text-black uppercase rounded-md font-bold border-black border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
-							>
-								Read More
-							</NuxtLink>
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-6">
+					<div class="relative">
+						<div class="half-content-image-3">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- END SECTION 3 -->
+
+		<!-- START SECTION 4 - COUPLE -->
+		<div class="bg-primary text-white">
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-6 md:order-2">
+					<div class="relative">
+						<div class="headshot-content-text">
+							<div class="content-middle-medium text-center py-10 md:px-10">
+								<div class="mb-10">
+									<h2 class="pt-7 text-5xl">
+										Meet {{ groomName }} & {{ brideName }}
+									</h2>
+									<p class="text-left">
+										{{ coupleBio.substring(0, 200) + '...' }}
+									</p>
+								</div>
+								<div class="text-center mb-10">
+									<NuxtLink
+										to="/the-couple"
+										class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+									>
+										Read More
+									</NuxtLink>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-6">
+					<div class="relative">
+						<div class="half-content-image-4">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END SECTION 2 -->
+
 	</div>
 </template>
 
@@ -178,14 +223,64 @@ export default {
 
 <style>
 /* stylelint-disable color-function-notation */
-.index-h1-background {
+.half-content-image-header {
 	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
 	url('~static/images/index/index-head.jpg');
+	height: 45vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.half-content-image-1 {
+	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
+	url('~static/images/index/countdown-side.jpg');
+	height: 45vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.half-content-image-2 {
+	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
+	url('~static/images/index/groom-headshot.jpg');
 	height: 50vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
+.half-content-image-3 {
+	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
+	url('~static/images/index/bride-headshot.jpg');
+	height: 50vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.half-content-image-4 {
+	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
+		url('~static/images/index/couple-side.jpg');
+	height: 50vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 /* stylelint-enable color-function-notation */
+.title-content-text {
+	height: 45vh;
+}
+
+.headshot-content-text {
+	height: 50vh;
+}
+
+@media screen and (min-width: 40em) {
+	.half-content-text {
+		height: 45vh;
+	}
+}
 </style>

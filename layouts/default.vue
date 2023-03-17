@@ -110,7 +110,7 @@
         <Nuxt />
 
         <!--Footer -->
-        <div class="bg-primary text-white">
+        <div class="bg-primary-alt text-white">
             <div class="mx-4 md:mx-10 lg:max-w-5xl lg:mx-auto py-10">
                 <div class="grid grid-cols-12 gap-4 md:gap-10">
                     <div class="col-span-12 md:col-span-4">

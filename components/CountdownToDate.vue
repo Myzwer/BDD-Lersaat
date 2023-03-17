@@ -1,23 +1,25 @@
 <template>
-    <div class="grid grid-cols-12 gap-4 pt-10 pb-12">
-        <div class="col-span-6 md:col-span-3">
-            <p class="font-bold text-6xl body-font">{{ days }}</p>
-            <p class="font-bold text-2xl">Days</p>
-        </div>
+	<div class="md:max-w-2xl mx-auto">
+		<div class="grid grid-cols-12 gap-4 pt-10 pb-12">
+			<div class="col-span-6">
+				<p class="font-bold text-5xl body-font">{{ days }}</p>
+				<p class="font-bold text-2xl">Days</p>
+			</div>
 
-        <div class="col-span-6 md:col-span-3">
-            <p class="font-bold text-6xl body-font">{{ hours }}</p>
-            <p class="font-bold text-2xl">Hours</p>
-        </div>
-        <div class="col-span-6 md:col-span-3">
-            <p class="font-bold text-6xl body-font">{{ minutes }}</p>
-            <p class="font-bold text-2xl">Minutes</p>
-        </div>
-        <div class="col-span-6 md:col-span-3">
-            <p class="font-bold text-6xl body-font">{{ seconds }}</p>
-            <p class="font-bold text-2xl">Seconds</p>
-        </div>
-    </div>
+			<div class="col-span-6">
+				<p class="font-bold text-5xl body-font">{{ hours }}</p>
+				<p class="font-bold text-2xl">Hours</p>
+			</div>
+			<div class="col-span-6">
+				<p class="font-bold text-5xl body-font">{{ minutes }}</p>
+				<p class="font-bold text-2xl">Minutes</p>
+			</div>
+			<div class="col-span-6">
+				<p class="font-bold text-5xl body-font">{{ seconds }}</p>
+				<p class="font-bold text-2xl">Seconds</p>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
