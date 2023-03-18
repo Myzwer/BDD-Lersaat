@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- START HEADER -->
-		<div class="bg-primary text-black">
+		<div class="bg-primary bg-gradient-to-b from-primary to-primary-gradient text-white">
 			<div class="grid grid-cols-12">
 				<div class="col-span-12 md:col-span-6 md:order-2">
 					<div class="relative">
@@ -28,9 +28,9 @@
 		<!-- END HEADER -->
 
 		<!-- START SECTION 1 - COUNTDOWN -->
-		<div class="bg-secondary text-black">
+		<div class="bg-secondary bg-gradient-to-b from-secondary to-secondary-gradient text-black">
 			<div class="grid grid-cols-12">
-				<div class="col-span-12 md:col-span-6">
+				<div class="col-span-12">
 					<div class="relative">
 						<div class="half-content-text">
 							<div class="content-middle-medium text-center py-10">
@@ -41,18 +41,12 @@
 									<a
 										:href="rsvpLink"
 										target="_blank"
-										class="bg-accent text-black uppercase rounded-md font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
+										class="bg-accent text-black uppercase rounded-md font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-accent-alt mt-10"
 									>
 										RSVP!
 									</a>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-12 md:col-span-6">
-					<div class="relative">
-						<div class="half-content-image-1">
 						</div>
 					</div>
 				</div>
@@ -62,17 +56,17 @@
 
 
 		<!-- START SECTION 2 - GROOM -->
-		<div class="bg-primary">
+		<div class="bg-primary bg-gradient-to-b from-primary to-primary-gradient text-white">
 			<div class="grid grid-cols-12">
-				<div class="col-span-12 md:col-span-6 md:order-2">
+				<div class="col-span-12 md:col-span-6">
 					<div class="relative">
 						<div class="headshot-content-text">
 							<div class="content-middle-medium text-center py-10 md:px-10">
 								<div class="mb-10">
-									<h2 class="pt-7 text-5xl text-black">
+									<h2 class="pt-7 text-5xl ">
 										About {{ groomName }}
 									</h2>
-									<p class="text-black text-left">
+									<p class="text-left">
 										{{ groomBio.substring(0, 130) + '...' }}
 									</p>
 								</div>
@@ -80,7 +74,7 @@
 								<div class="text-center mb-10">
 									<NuxtLink
 										to="/groom"
-										class="text-black uppercase rounded-md font-bold border-black border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+										class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
 									>
 										Read More
 									</NuxtLink>
@@ -91,7 +85,7 @@
 				</div>
 				<div class="col-span-12 md:col-span-6">
 					<div class="relative">
-						<div class="half-content-image-2">
+						<div class="half-content-groom">
 						</div>
 					</div>
 				</div>
@@ -100,9 +94,9 @@
 		<!-- END SECTION 2 -->
 
 		<!-- START SECTION 3 - BRIDE -->
-		<div class="bg-secondary text-black">
+		<div class="bg-secondary bg-gradient-to-b from-secondary to-secondary-gradient text-black">
 			<div class="grid grid-cols-12">
-				<div class="col-span-12 md:col-span-6">
+				<div class="col-span-12 md:col-span-6 md:order-2">
 					<div class="relative">
 						<div class="headshot-content-text">
 							<div class="content-middle-medium text-center py-10 md:px-10">
@@ -129,7 +123,7 @@
 				</div>
 				<div class="col-span-12 md:col-span-6">
 					<div class="relative">
-						<div class="half-content-image-3">
+						<div class="half-content-bride">
 						</div>
 					</div>
 				</div>
@@ -138,12 +132,12 @@
 		<!-- END SECTION 3 -->
 
 		<!-- START SECTION 4 - COUPLE -->
-		<div class="bg-primary text-black">
+		<div class="bg-primary bg-gradient-to-b from-primary to-primary-gradient text-white">
 			<div class="grid grid-cols-12">
-				<div class="col-span-12 md:col-span-6 md:order-2">
+				<div class="col-span-12 md:col-span-6">
 					<div class="relative">
 						<div class="headshot-content-text">
-							<div class="content-middle-medium text-center py-10 md:px-10">
+							<div class="content-middle-medium text-center py-10 px-5 md:px-10">
 								<div class="mb-10">
 									<h2 class="pt-7 text-5xl">
 										Meet {{ groomName }} & {{ brideName }}
@@ -155,7 +149,7 @@
 								<div class="text-center mb-10">
 									<NuxtLink
 										to="/the-couple"
-										class="text-black uppercase rounded-md font-bold border-black border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+										class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
 									>
 										Read More
 									</NuxtLink>
@@ -166,7 +160,7 @@
 				</div>
 				<div class="col-span-12 md:col-span-6">
 					<div class="relative">
-						<div class="half-content-image-4">
+						<div class="half-content-couple">
 						</div>
 					</div>
 				</div>
@@ -226,43 +220,41 @@ export default {
 .half-content-image-header {
 	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
 	url('~static/images/index/index-head.jpg');
-	height: 45vh;
+	height: 25vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.half-content-image-1 {
-	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
-	url('~static/images/index/countdown-side.jpg');
-	height: 45vh;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+@media screen and (min-width: 40em) {
+	.half-content-image-header {
+		height: 75vh;
+	}
 }
 
-.half-content-image-2 {
+
+.half-content-groom {
 	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
 	url('~static/images/index/groom-headshot.jpg');
-	height: 50vh;
+	height: 60vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.half-content-image-3 {
+.half-content-bride {
 	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
 	url('~static/images/index/bride-headshot.jpg');
-	height: 50vh;
+	height: 60vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.half-content-image-4 {
+.half-content-couple {
 	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
 		url('~static/images/index/couple-side.jpg');
-	height: 50vh;
+	height: 60vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -271,11 +263,19 @@ export default {
 
 /* stylelint-enable color-function-notation */
 .title-content-text {
-	height: 45vh;
+	height: 40vh;
 }
 
-.headshot-content-text {
-	height: 50vh;
+@media screen and (min-width: 40em) {
+	.title-content-text {
+		height: 75vh;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	.headshot-content-text {
+		height: 60vh;
+	}
 }
 
 @media screen and (min-width: 40em) {

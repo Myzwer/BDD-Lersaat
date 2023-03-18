@@ -17,9 +17,10 @@ $breakpoint: 1001px; // When do you want to switch from mobile to desktop?
 $nav-height: 70px; // How tall do you want the navbar to be?
 $nav-background: #F9EAD6; // What background color do you want?
 $nav-font-color: #131C0A; // What primary font color?
-$link-hover-color: #fff7f4; // What color when you hover?
-$button-color: #B17C7E; // What background color do you want the button to be?
-$button-hover-color: #ad6c6e; // What hover color do you want the button to be?
+$link-hover-color: #fdf5ec; // What color when you hover?
+$button-color: #953E59; // What background color do you want the button to be?
+$button-hover-color: #953E59; // What hover color do you want the button to be?
+
 
 // Outer navigation wrapper
 .navigation {
@@ -62,8 +63,9 @@ $button-hover-color: #ad6c6e; // What hover color do you want the button to be?
 
 // Navigation
 nav {
-  float: right;
   position: absolute;
+  display: flex;
+  justify-content: center;
   ul {
     list-style: none;
     margin: 0;
@@ -82,7 +84,6 @@ nav {
         text-decoration: none;
         &:hover {
           background: $link-hover-color;
-          color: #eeeeee;
         }
         &:not(:only-child):after {
           content: " ▾";
@@ -136,6 +137,7 @@ nav {
     padding-left: 10px;
   }
   nav {
+    display: block;
     padding: $nav-height 0 15px;
     width: 100%;
     z-index: 10;
@@ -211,60 +213,6 @@ nav {
       transform: rotate(-45deg);
       width: 35px;
     }
-  }
-}
-
-.nav-list > li:last-of-type {
-  align-self: center;
-  background-color: $button-color;
-  color: #333333;
-  cursor: pointer;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.1s ease-in-out;
-}
-
-.nav-list > li:last-of-type a {
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-  color: #eeeeee;
-  font-weight: 600;
-}
-
-.nav-list > li:last-of-type:hover a {
-  background-color: rgba(0, 0, 0, 0);
-  color: #eeeeee;
-}
-
-.nav-list > li:last-of-type:hover {
-  background: $button-hover-color;
-}
-
-.nav-list > li:last-of-type:active {
-  transform: scale(1.025);
-}
-
-@media screen and (min-width: $breakpoint) {
-  .nav-list > li:last-of-type {
-    border-radius: 10px;
-    margin-left: 6px;
-    margin-right: 10px;
-    margin-top: 14px;
-  }
-
-  .nav-list > .nav-list > li:last-of-type a {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .nav-list > li:last-of-type:hover a {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  nav ul li:last-of-type a,
-  nav ul li:last-of-type a:visited {
-    line-height: 10px;
-    padding: 15px;
   }
 }
 
