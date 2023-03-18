@@ -42,21 +42,21 @@ module.exports = {
 
             // The client's primary wedding color + a close variation of the color. Ideally a dark color.
             primary: {
-                DEFAULT: '#6D516A',
-                alt: '#483546',
-                special: '#594256',
+                DEFAULT: '#B28D77',
+                alt: '#7a6051',
+                special: '#917360',
             },
 
             // The client's secondary wedding color + a close variation. Ideally a light color.
             secondary: {
-                DEFAULT: '#9CB9C2',
-                alt: '#859ca4',
+                DEFAULT: '#F9EAD6',
+                alt: '#fff7f4',
             },
 
             // This is for buttons, it should be complementary but different than primary and secondary
             accent: {
-                DEFAULT: '#415156',
-                alt: '#323e42',
+                DEFAULT: '#B17C7E',
+                alt: '#ad6c6e',
             },
         },
     },

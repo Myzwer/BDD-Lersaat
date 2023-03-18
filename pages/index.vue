@@ -1,12 +1,12 @@
 <template>
 	<div>
 		<!-- START HEADER -->
-		<div class="bg-primary">
+		<div class="bg-primary text-black">
 			<div class="grid grid-cols-12">
 				<div class="col-span-12 md:col-span-6 md:order-2">
 					<div class="relative">
 						<div class="title-content-text">
-							<div class="content-middle text-white text-center">
+							<div class="content-middle text-center">
 								<h1 class="text-7xl mb-2 px-2">
 									{{ groomName }} + {{ brideName }}
 								</h1>
@@ -41,7 +41,7 @@
 									<a
 										:href="rsvpLink"
 										target="_blank"
-										class="bg-accent text-white uppercase rounded-md font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
+										class="bg-accent text-black uppercase rounded-md font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
 									>
 										RSVP!
 									</a>
@@ -69,10 +69,10 @@
 						<div class="headshot-content-text">
 							<div class="content-middle-medium text-center py-10 md:px-10">
 								<div class="mb-10">
-									<h2 class="pt-7 text-5xl text-white">
+									<h2 class="pt-7 text-5xl text-black">
 										About {{ groomName }}
 									</h2>
-									<p class="text-white text-left">
+									<p class="text-black text-left">
 										{{ groomBio.substring(0, 130) + '...' }}
 									</p>
 								</div>
@@ -80,7 +80,7 @@
 								<div class="text-center mb-10">
 									<NuxtLink
 										to="/groom"
-										class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+										class="text-black uppercase rounded-md font-bold border-black border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
 									>
 										Read More
 									</NuxtLink>
@@ -138,7 +138,7 @@
 		<!-- END SECTION 3 -->
 
 		<!-- START SECTION 4 - COUPLE -->
-		<div class="bg-primary text-white">
+		<div class="bg-primary text-black">
 			<div class="grid grid-cols-12">
 				<div class="col-span-12 md:col-span-6 md:order-2">
 					<div class="relative">
@@ -155,7 +155,7 @@
 								<div class="text-center mb-10">
 									<NuxtLink
 										to="/the-couple"
-										class="text-white uppercase rounded-md font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+										class="text-black uppercase rounded-md font-bold border-black border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
 									>
 										Read More
 									</NuxtLink>
@@ -172,7 +172,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- END SECTION 2 -->
+		<!-- END SECTION 4 -->
 
 	</div>
 </template>
