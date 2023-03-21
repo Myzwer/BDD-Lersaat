@@ -1,31 +1,35 @@
 <template>
     <div>
-        <div class="relative">
-            <div class="couple-h1-background">
-                <div class="content-middle text-white text-center">
-                    <h1 class="text-7xl mb-2 px-2">About Us</h1>
-                    <h2 class="text-xl font-bold uppercase body-font">
-                        {{ hashtag }}
-                    </h2>
-                </div>
-            </div>
-        </div>
+		<!-- START HEADER -->
+		<div class="bg-primary bg-gradient-to-b from-primary to-primary-gradient text-white">
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-6 md:order-2">
+					<div class="relative">
+						<div class="title-content-text">
+							<div class="content-middle text-center">
+								<h1 class="text-7xl mb-2 px-2">About Us</h1>
+								<h2 class="text-xl font-bold uppercase body-font">
+									{{ hashtag }}
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-6">
+					<div class="relative">
+						<div class="half-content-couple-header">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END HEADER -->
 
-        <div class="bg-secondary">
-            <div class="text-center mx-auto max-w-2xl md:max-w-5xl">
+        <div class="bg-secondary bg-gradient-to-b from-secondary to-secondary-gradient">
+            <div class="text-center mx-auto max-w-2xl md:max-w-3xl">
                 <div class="grid grid-cols-12 gap-4 pt-10 pb-12">
-                    <div class="col-span-12 md:col-span-5 px-5">
-                        <div class="mt-10 px-5">
-                            <img
-                                class="rounded-xl shadow-lg"
-                                :src="couplePhoto"
-                                alt="Photo of the Couple"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="col-span-12 md:col-span-7 px-5">
-                        <h2 class="pt-7 text-5xl text-left">
+                    <div class="col-span-12 px-5">
+                        <h2 class="pt-7 text-5xl text-center pb-5">
                             Meet {{ groomName }} + {{ brideName }}
                         </h2>
                         <p class="text-left pb-5">
@@ -66,13 +70,19 @@ export default {
 
 <style>
 /* stylelint-disable color-function-notation */
-.couple-h1-background {
-    background: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
-        url('~static/images/couple/couple-head.jpg');
-    height: 60vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.half-content-couple-header {
+	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
+	url('~static/images/couple/couple-head.jpg');
+	height: 25vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width: 40em) {
+	.half-content-couple-header {
+		height: 75vh;
+	}
 }
 
 /* stylelint-enable color-function-notation */
