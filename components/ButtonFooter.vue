@@ -140,7 +140,7 @@
 		</div>
 		<!-- END SECTION 2 -->
 
-
+<div class="secondary-bar bg-accent"></div>
 	</div>
 </template>
 
@@ -228,6 +228,10 @@ export default {
 	.button-footer-content {
 		height: 60vh;
 	}
+}
+
+.secondary-bar {
+	height: 50px;
 }
 
 /* stylelint-enable color-function-notation */
