@@ -216,10 +216,8 @@ export default {
 </script>
 
 <style>
-/* stylelint-disable color-function-notation */
 .half-content-image-header {
-	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
-	url('~static/images/index/index-head.jpg');
+	background: url('~static/images/index/index-head.jpg');
 	height: 25vh;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -232,10 +230,8 @@ export default {
 	}
 }
 
-
 .half-content-groom {
-	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
-	url('~static/images/index/groom-headshot.jpg');
+	background: url('~static/images/index/groom-headshot.jpg');
 	height: 60vh;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -243,8 +239,7 @@ export default {
 }
 
 .half-content-bride {
-	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
-	url('~static/images/index/bride-headshot.jpg');
+	background: url('~static/images/index/bride-headshot.jpg');
 	height: 60vh;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -252,25 +247,13 @@ export default {
 }
 
 .half-content-couple {
-	background: linear-gradient(rgba(0, 0, 0, 00%), rgba(0, 0, 0, 0%)),
-		url('~static/images/index/couple-side.jpg');
+	background: url('~static/images/index/couple-side.jpg');
 	height: 60vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-
-/* stylelint-enable color-function-notation */
-.title-content-text {
-	height: 40vh;
-}
-
-@media screen and (min-width: 40em) {
-	.title-content-text {
-		height: 75vh;
-	}
-}
 
 @media screen and (min-width: 40em) {
 	.headshot-content-text {

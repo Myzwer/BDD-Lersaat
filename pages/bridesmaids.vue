@@ -77,22 +77,15 @@ export default {
 </script>
 
 <style>
-/* stylelint-disable color-function-notation */
-.half-content-bridesmaid-header {
-	background: linear-gradient(rgba(0, 0, 0, 0%), rgba(0, 0, 0, 0%)),
-	url('~static/images/bridesmaids/bridesmaid-head.jpg');
-	height: 25vh;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 @media screen and (min-width: 40em) {
 	.half-content-bridesmaid-header {
+		background: url('~static/images/bridesmaids/bridesmaid-head.jpg');
 		height: 75vh;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
 
-
-/* stylelint-enable color-function-notation */
 </style>

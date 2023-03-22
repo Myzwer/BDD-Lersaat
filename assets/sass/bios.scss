@@ -1,0 +1,37 @@
+.maid-1 {
+  background: url('~static/images/bridesmaids/b1.jpg');
+  height: 35vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maid-2 {
+  background: url('~static/images/bridesmaids/b2.jpg');
+  height: 35vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maid-3 {
+  background: url('~static/images/bridesmaids/b3.jpg');
+  height: 35vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maid-4 {
+  background: url('~static/images/bridesmaids/b4.jpg');
+  height: 35vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 40em) {
+  .maid-1, .maid-2, .maid-3, .maid-4 {
+    height: 75vh;
+  }
+}

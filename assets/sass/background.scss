@@ -27,3 +27,27 @@
     width: 100%;
   }
 }
+
+
+// This is used to set heights across the site
+.title-content-text {
+  height: 40vh;
+}
+
+@media screen and (min-width: 40em) {
+  .title-content-text {
+    height: 75vh;
+  }
+}
+
+// This is for the groomsmen and bridesmaid pages
+@media screen and (min-width: 40em) {
+  .bio-text {
+    height: 75vh;
+  }
+}
+
+// This is the colored bar that sits above the footer on all the pages.
+.secondary-bar {
+  height: 50px;
+}

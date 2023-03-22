@@ -140,7 +140,6 @@
 		</div>
 		<!-- END SECTION 2 -->
 
-<div class="secondary-bar bg-accent"></div>
 	</div>
 </template>
 
@@ -230,9 +229,6 @@ export default {
 	}
 }
 
-.secondary-bar {
-	height: 50px;
-}
 
 /* stylelint-enable color-function-notation */
 </style>
