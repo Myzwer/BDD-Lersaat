@@ -1,3 +1,4 @@
+// Bridesmaids
 .maid-1 {
   background: url('~static/images/bridesmaids/b1.jpg');
   height: 35vh;
@@ -32,6 +33,45 @@
 
 @media screen and (min-width: 40em) {
   .maid-1, .maid-2, .maid-3, .maid-4 {
+    height: 75vh;
+  }
+}
+
+// Groomsmen
+.men-1 {
+  background: url('~static/images/groomsmen/g1.jpg');
+  height: 35vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.men-2 {
+  background: url('~static/images/groomsmen/g2.jpg');
+  height: 35vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.men-3 {
+  background: url('~static/images/groomsmen/g3.jpg');
+  height: 35vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.men-4 {
+  background: url('~static/images/groomsmen/g4.jpg');
+  height: 35vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 40em) {
+  .men-1, .men-2, .men-3, .men-4 {
     height: 75vh;
   }
 }
