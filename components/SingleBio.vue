@@ -29,64 +29,39 @@
 						<p class="text-left pb-5">{{ description }}</p>
 
 						<!-- Buttons -->
-						<div class="grid grid-cols-12 gap-4 pb-12">
-							<div
+						<div class="pb-5">
+							<a
 								v-if="facebook != null"
-								class="col-span-12 lg:col-span-4"
+								:href="facebook"
+								target="_blank"
+								class="text-4xl px-2"
 							>
-								<div class="pb-2 md:pb-5">
-									<a :href="facebook" target="_blank">
-										<div
-											:class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-black hover:border-black
-										${even ? 'text-black border-black' : 'text-white border-white'}`"
-										>
-											<font-awesome-icon
-												icon="fa-brands fa-facebook"
-											/>
-											Facebook
-										</div>
-									</a>
-								</div>
-							</div>
-
-							<div
+								<font-awesome-icon
+									icon="fa-brands fa-facebook"
+								/>
+							</a>
+							<a
 								v-if="instagram != null"
-								class="col-span-12 lg:col-span-4"
+								:href="instagram"
+								target="_blank"
+								class="text-4xl px-2"
 							>
-								<div class="pb-2 md:pb-5">
-									<a :href="instagram" target="_blank">
-										<div
-											:class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-black hover:border-black
-										${even ? 'text-black border-black' : 'text-white border-white'}`"
-										>
-											<font-awesome-icon
-												icon="fa-brands fa-instagram"
-											/>
-											Instagram
-										</div>
-									</a>
-								</div>
-							</div>
-
-							<div
+								<font-awesome-icon
+									icon="fa-brands fa-instagram"
+								/>
+							</a>
+							<a
 								v-if="twitter != null"
-								class="col-span-12 lg:col-span-4"
+								:href="twitter"
+								target="_blank"
+								class="text-4xl px-2"
 							>
-								<div class="pb-2 md:pb-5">
-									<a :href="twitter" target="_blank">
-										<div
-											:class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-black hover:border-black
-										${even ? 'text-black border-black' : 'text-white border-white'}`"
-										>
-											<font-awesome-icon
-												icon="fa-brands fa-twitter"
-											/>
-											Twitter
-										</div>
-									</a>
-								</div>
-							</div>
+								<font-awesome-icon
+									icon="fa-brands fa-twitter"
+								/>
+							</a>
 						</div>
+
 						<!-- End Buttons -->
 					</div>
 				</div>
