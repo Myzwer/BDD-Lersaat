@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-12 md:col-span-4 text-left">
+    <div class="col-span-12 md:col-span-4 text-center">
         <h3 class="body-font text-xl font-bold">
             {{ name }}
         </h3>
@@ -12,7 +12,7 @@
             <a
                 :href="link"
                 target="_blank"
-                class="bg-accent text-white uppercase rounded-md font-bold shadow-lg text-white px-8 py-3 mt-10 transition duration-300 ease-in-out hover:bg-accent-alt hover:shadow-xl"
+                class="bg-accent text-black uppercase rounded-md font-bold shadow-lg text-black px-8 py-3 mt-10 transition duration-300 ease-in-out hover:bg-accent-alt hover:shadow-xl"
             >
                 View Website
                 <font-awesome-icon
