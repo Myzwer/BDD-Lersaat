@@ -62,8 +62,8 @@
 					<div class="relative">
 						<div class="headshot-content-text">
 							<div class="content-middle-medium text-center py-10 md:px-10">
-								<div class="mb-10">
-									<h2 class="pt-7 text-5xl ">
+								<div class="mb-10 px-5">
+									<h2 class="pt-7 text-5xl">
 										About {{ groomName }}
 									</h2>
 									<p class="text-left">
@@ -100,7 +100,7 @@
 					<div class="relative">
 						<div class="headshot-content-text">
 							<div class="content-middle-medium text-center py-10 md:px-10">
-								<div class="mb-10">
+								<div class="mb-10 px-5 md:px-1">
 									<h2 class="pt-7 text-5xl">
 										About {{ brideName }}
 									</h2>
